@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="622">
+    <Grid>
+        <Button Content="单击产生20个随机数" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" Click="Button_Click"/>
+        <GroupBox Header="随机数" HorizontalAlignment="Center" Height="200" Margin="0,50,0,0" VerticalAlignment="Top" Width="602">
+            <StackPanel x:Name="spNumbers" Orientation="Horizontal" Margin="0,0,-2,0"/>
+        </GroupBox>
+        <Label Content="最小值" HorizontalAlignment="Left" Margin="10,260,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbMin" HorizontalAlignment="Left" Height="23" Margin="70,260,0,0" TextWrapping="Wrap" Text="{Binding Min}" VerticalAlignment="Top" Width="120" TextChanged="tbMin_TextChanged"/>
+        <Label Content="平均值" HorizontalAlignment="Left" Margin="200,260,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbAvg" HorizontalAlignment="Left" Height="23" Margin="260,260,0,0" TextWrapping="Wrap" Text="{Binding Avg}" VerticalAlignment="Top" Width="120" TextChanged="tbAvg_TextChanged"/>
+        <Label Content="最大值" HorizontalAlignment="Left" Margin="390,260,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbMax" HorizontalAlignment="Left" Height="23" Margin="450,260,0,0" TextWrapping="Wrap" Text="{Binding Max}" VerticalAlignment="Top" Width="120" TextChanged="tbMax_TextChanged"/>
+    </Grid>
+</Window>
